@@ -1,5 +1,7 @@
 import React from "react";
+import { useParams } from "react-router";
 
 export default function User({match}) {
-return(<div>User {match.params.name}</div>)
+    const { name } = useParams();
+return(<div>User {name}</div>)
 }
