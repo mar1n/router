@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function User() {
-    return(<div>User</div>)
+export default function User({match}) {
+return(<div>User {match.params.name}</div>)
 }
